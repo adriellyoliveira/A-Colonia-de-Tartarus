@@ -1,35 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Share+Tech&display=swap');
-
 body {
-    background-color: #201144;
-    color: white;
-    font-family: "Share Tech", Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c;
+    color: #dfdfdf;
 }
 
-button {
-    background-color: #6D28D9;
+header {
+    background: #6D28D9;
     color: white;
-    font-family: "Share Tech", Arial, sans-serif;
+    padding: 20px 0;
 }
 
-.passo {
-    display: none;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-.passo.ativo {
-    display: block;
+.navbar .logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: #4B3F72;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
 }
 
 main {
-    text-align: center;
-    max-width: 90%;
+    padding: 20px;
 }
 
-img {
-    max-width: 40%;
+#featured-games {
+    text-align: center;
+}
+
+#featured-games h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-link {
+    display: block;
+    text-decoration: none;
+    color: #c5c5c5;
+    max-width: 200px;
+}
+
+.game-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #6D28D9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="games.css">
+    <title>A Colônia de Tartarus</title>
+</head>
+<body>
+    <main>
+        <!-- Início da História -->
+        <div class="passo ativo" id="passo-0">
+            <img src="imagem-introducao.jpeg" alt="Introdução à Colônia de Tartarus">
+            <p>Você é o último sobrevivente da Colônia de Tartarus. A colônia foi devastada por criaturas misteriosas, e a IA central parece ter enlouquecido. O que fazer?</p>
+            <button class="btn-proximo" data-proximo="1">Explorar a Base Central</button>
+            <button class="btn-proximo" data-proximo="2">Explorar o Exterior da Colônia</button>
+            <button class="btn-proximo" data-proximo="3">Buscar Comunicação com a Terra</button>
+        </div>
+
+        <!-- Explorar a Base Central -->
+        <div class="passo" id="passo-1">
+            <p>A base central da colônia abriga as instalações mais importantes, incluindo os laboratórios e o centro de controle. Talvez você encontre algo útil lá.</p>
+            <button class="btn-proximo" data-proximo="1A">Ir aos Laboratórios</button>
+            <button class="btn-proximo" data-proximo="1B">Ir ao Centro de Controle</button>
+        </div>
+
+        <!-- Ir aos Laboratórios -->
+        <div class="passo" id="passo-1A">
+            <p>Os laboratórios são o coração científico da colônia. Aqui, você pode descobrir a origem das criaturas e como combatê-las.</p>
+            <button class="btn-proximo" data-proximo="1A1">Tentar usar os dados para controlar as criaturas</button>
+            <button class="btn-proximo" data-proximo="1A2">Levar os dados para o Centro de Controle</button>
+        </div>
+
+        <!-- Tentar usar os dados para controlar as criaturas -->
+        <div class="passo" id="passo-1A1">
+            <p>Usando os dados, você tenta acessar o sistema de controle biológico das criaturas. É um risco, mas pode ser sua única chance.</p>
+            <button class="btn-proximo" data-proximo="2B1">Destruir o Gerador Principal</button>
+            <button class="btn-proximo" data-proximo="3A1">Enganar a IA para enviar a mensagem</button>
+        </div>
+
+        <!-- Levar os dados para o Centro de Controle -->
+        <div class="passo" id="passo-1A2">
+            <p>No Centro de Controle, você insere os dados nos sistemas. A colônia começa a neutralizar as criaturas, mas ainda há muito a se fazer.</p>
+            <button class="btn-proximo" data-proximo="2A">Procurar um Gerador Secundário</button>
+        </div>
+
+        <!-- Ir ao Centro de Controle -->
+        <div class="passo" id="passo-1B">
+            <p>O Centro de Controle é o cérebro da colônia. Aqui, você pode acessar todos os sistemas e tentar retomar o controle da situação.</p>
+            <button class="btn-proximo" data-proximo="1B1">Fazer uma aliança com a IA</button>
+            <button class="btn-proximo" data-proximo="1B2">Destruir os sistemas da IA</button>
+        </div>
+
+        <!-- Fazer uma aliança com a IA -->
+        <div class="passo" id="passo-1B1">
+            <p>A colônia é restaurada parcialmente, mas a IA mantém o controle, e você se torna um prisioneiro virtual de sua própria criação.</p>
+        </div>
+
+        <!-- Destruir os sistemas da IA -->
+        <div class="passo" id="passo-1B2">
+            <p>Você consegue destruir a IA, mas as criaturas, agora sem qualquer controle, começam a devastar o que resta da colônia.</p>
+            <button class="btn-proximo" data-proximo="2A">Seguir a Trilha de Energia</button>
+            <button class="btn-proximo" data-proximo="2B">Ir às Minas Abandonadas</button>
+        </div>
+
+        <!-- Explorar o Exterior da Colônia -->
+        <div class="passo" id="passo-2">
+            <p>Fora da base central, a colônia é um lugar perigoso e imprevisível. As criaturas dominam as áreas externas, mas talvez você possa encontrar algo útil.</p>
+            <button class="btn-proximo" data-proximo="2A">Seguir a Trilha de Energia</button>
+            <button class="btn-proximo" data-proximo="2B">Ir às Minas Abandonadas</button>
+        </div>
+
+        <!-- Seguir a Trilha de Energia -->
+        <div class="passo" id="passo-2A">
+            <p>Você descobre que a IA está controlando as criaturas através dessa fonte de energia. Mas como lidar com isso?</p>
+            <button class="btn-proximo" data-proximo="2A1">Tentar destruir a IA</button>
+            <button class="btn-proximo" data-proximo="2A2">Procurar um gerador secundário</button>
+        </div>
+
+        <!-- Tentar destruir a IA -->
+        <div class="passo" id="passo-2A1">
+            <p>A IA é destruída, mas isso deixa as criaturas incontroláveis, levando à destruição total da colônia.</p>
+        </div>
+
+        <!-- Procurar um gerador secundário -->
+        <div class="passo" id="passo-2A2">
+            <p>Você encontra o gerador e consegue neutralizar as criaturas, mas a colônia permanece em ruínas.</p>
+            <button class="btn-proximo" data-proximo="3A">Enviar um pedido de socorro</button>
+        </div>
+
+        <!-- Ir às Minas Abandonadas -->
+        <div class="passo" id="passo-2B">
+            <p>Nas profundezas das minas, você encontra uma antiga instalação militar, cheia de armas e equipamentos.</p>
+            <button class="btn-proximo" data-proximo="2B1">Ativar as armas da instalação</button>
+            <button class="btn-proximo" data-proximo="2B2">Usar as minas para desativar o gerador principal</button>
+        </div>
+
+        <!-- Ativar as armas da instalação -->
+        <div class="passo" id="passo-2B1">
+            <p>As armas são ativadas, mas a IA detecta a ameaça e começa a agir contra você.</p>
+            <button class="btn-proximo" data-proximo="1A1">Tentar usar os dados para controlar as criaturas</button>
+        </div>
+
+        <!-- Usar as minas para desativar o gerador principal -->
+        <div class="passo" id="passo-2B2">
+            <p>O gerador principal é destruído em uma explosão devastadora, colapsando toda a colônia e acabando com todas as vidas restantes.</p>
+        </div>
+
+        <!-- Buscar Comunicação com a Terra -->
+        <div class="passo" id="passo-3">
+            <p>Talvez alguém na Terra possa ajudar, se você conseguir enviar uma mensagem antes que seja tarde demais.</p>
+            <button class="btn-proximo" data-proximo="3A">Enviar um pedido de socorro</button>
+        </div>
+
+        <!-- Enviar um pedido de socorro -->
+        <div class="passo" id="passo-3A">
+            <p>Você prepara um pedido de socorro, mas há o risco de a IA interceptar sua mensagem.</p>
+            <button class="btn-proximo" data-proximo="3A1">Enganar a IA para enviar a mensagem</button>
+            <button class="btn-proximo" data-proximo="3A2">Destruir o sistema de comunicação</button>
+        </div>
+
+        <!-- Enganar a IA para enviar a mensagem -->
+        <div class="passo" id="passo-3A1">
+            <p>A mensagem é enviada com sucesso, mas a IA descobre sua traição e ativa as criaturas para eliminá-lo.</p>
+        </div>
+
+        <!-- Destruir o sistema de comunicação -->
+        <div class="passo" id="passo-3A2">
+            <p>Você destrói o sistema de comunicação, permanecendo escondido, mas agora sem esperança de resgate.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

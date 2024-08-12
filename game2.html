@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Jornada dos Reinos Perdidos</title>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+    <main>
+        <!-- Aldeia do Reino dos Ventos -->
+        <div class="passo ativo" id="passo-0">
+            <img src="imagem-introducao.jpeg" alt="Introdução à Aldeia do Reino dos Ventos">
+            <p>Você começa na Aldeia do Reino dos Ventos, um lugar pequeno e pacífico, mas com uma sensação de inquietude no ar devido a rumores recentes.</p>
+            <button class="btn-proximo" data-proximo="1">Investigar o Mistério na Aldeia</button>
+            <button class="btn-proximo" data-proximo="2">Explorar as Florestas Sombras</button>
+            <button class="btn-proximo" data-proximo="3">Buscar Comunicação com a Terra</button>
+        </div>
+
+        <!-- Investigar o Mistério na Aldeia -->
+        <div class="passo" id="passo-1">
+            <p>Você decide investigar o que está acontecendo na aldeia. As pessoas estão preocupadas e sussurram sobre um problema crescente.</p>
+            <button class="btn-proximo" data-proximo="1A">Ir à Taverna da Aldeia</button>
+            <button class="btn-proximo" data-proximo="1B">Ir ao Mercado</button>
+        </div>
+
+        <!-- Ir à Taverna da Aldeia -->
+        <div class="passo" id="passo-1A">
+            <p>A taverna da aldeia está repleta de murmúrios sobre eventos estranhos. Talvez consiga ouvir algo útil aqui.</p>
+            <button class="btn-proximo" data-proximo="1A1">Conversar com o Taverneiro</button>
+            <button class="btn-proximo" data-proximo="1A2">Ouvir os Aventureiros</button>
+        </div>
+
+        <!-- Conversar com o Taverneiro -->
+        <div class="passo" id="passo-1A1">
+            <p>Você conversa com o taverneiro, que parece saber mais sobre os problemas da aldeia. Ele menciona que algo sinistro está se aproximando.</p>
+            <button class="btn-proximo" data-proximo="1A1A">Investigar mais na Aldeia</button>
+            <button class="btn-proximo" data-proximo="1A1B">Procurar ajuda em outro lugar</button>
+        </div>
+
+        <!-- Ouvir os Aventureiros -->
+        <div class="passo" id="passo-1A2">
+            <p>Você ouve uma conversa animada entre aventureiros. Eles falam sobre uma seita secreta e eventos estranhos nas florestas próximas.</p>
+            <button class="btn-proximo" data-proximo="1A2A">Seguir os Aventureiros</button>
+            <button class="btn-proximo" data-proximo="1A2B">Investigar por conta própria</button>
+        </div>
+
+        <!-- Ir ao Mercado -->
+        <div class="passo" id="passo-1B">
+            <p>Você decide ir ao mercado da aldeia. O mercado parece agitado, e talvez encontre algo útil.</p>
+            <button class="btn-proximo" data-proximo="1B1">Falar com o Mercador Local</button>
+            <button class="btn-proximo" data-proximo="1B2">Comprar Suprimentos</button>
+        </div>
+
+        <!-- Falar com o Mercador Local -->
+        <div class="passo" id="passo-1B1">
+            <p>Você conversa com um mercador local que menciona a venda de itens raros e também fala sobre um estranho aumento na demanda por itens de proteção.</p>
+            <button class="btn-proximo" data-proximo="1B1A">Comprar Itens de Proteção</button>
+            <button class="btn-proximo" data-proximo="1B1B">Investigar mais no Mercado</button>
+        </div>
+
+        <!-- Comprar Suprimentos -->
+        <div class="passo" id="passo-1B2">
+            <p>Você decide comprar alguns suprimentos essenciais. Eles podem ser úteis para sua jornada.</p>
+            <button class="btn-proximo" data-proximo="1B2A">Retornar à Aldeia</button>
+            <button class="btn-proximo" data-proximo="1B2B">Explorar o Mercado mais a fundo</button>
+        </div>
+
+        <!-- Explorar as Florestas Sombras -->
+        <div class="passo" id="passo-2">
+            <p>Você decide explorar as Florestas Sombras, um lugar denso e misterioso. As árvores altas bloqueiam a luz, e o ambiente é carregado de mistério.</p>
+            <button class="btn-proximo" data-proximo="2A">Seguir a Trilha de Energia</button>
+            <button class="btn-proximo" data-proximo="2B">Ir ao Círculo de Pedras Antigas</button>
+        </div>
+
+        <!-- Seguir a Trilha de Energia -->
+        <div class="passo" id="passo-2A">
+            <p>Você encontra uma trilha de energia que leva para o fundo da floresta. Isso pode levar a uma fonte de energia vital ou algo importante.</p>
+            <button class="btn-proximo" data-proximo="2A1">Investigar a Fonte de Energia</button>
+            <button class="btn-proximo" data-proximo="2A2">Procurar por Criaturas</button>
+        </div>
+
+        <!-- Investigar a Fonte de Energia -->
+        <div class="passo" id="passo-2A1">
+            <p>Você segue a trilha e descobre uma fonte de energia que parece estar controlando algo na floresta.</p>
+            <button class="btn-proximo" data-proximo="2A1A">Interagir com a Fonte de Energia</button>
+            <button class="btn-proximo" data-proximo="2A1B">Voltar para a Trilha</button>
+        </div>
+
+        <!-- Procurar por Criaturas -->
+        <div class="passo" id="passo-2A2">
+            <p>Você decide procurar por criaturas que possam estar conectadas à fonte de energia.</p>
+            <button class="btn-proximo" data-proximo="2A2A">Seguir as Criaturas</button>
+            <button class="btn-proximo" data-proximo="2A2B">Investigar o Ambiente</button>
+        </div>
+
+        <!-- Ir ao Círculo de Pedras Antigas -->
+        <div class="passo" id="passo-2B">
+            <p>Você descobre um círculo de pedras antigas na floresta. O local parece carregado de energia mágica e pode revelar segredos importantes.</p>
+            <button class="btn-proximo" data-proximo="2B1">Examinar as Runas</button>
+            <button class="btn-proximo" data-proximo="2B2">Realizar um Ritual</button>
+        </div>
+
+        <!-- Examinar as Runas -->
+        <div class="passo" id="passo-2B1">
+            <p>Você examina as runas esculpidas nas pedras e encontra informações sobre um antigo ritual que pode estar relacionado aos eventos recentes.</p>
+            <button class="btn-proximo" data-proximo="2B1A">Investigar o Ritual</button>
+            <button class="btn-proximo" data-proximo="2B1B">Retornar ao Círculo</button>
+        </div>
+
+        <!-- Realizar um Ritual -->
+        <div class="passo" id="passo-2B2">
+            <p>Você decide realizar um ritual usando as runas. Isso pode ter efeitos misteriosos, mas pode também fornecer pistas sobre o que está acontecendo.</p>
+            <button class="btn-proximo" data-proximo="2B2A">Executar o Ritual</button>
+            <button class="btn-proximo" data-proximo="2B2B">Explorar mais na Floresta</button>
+        </div>
+
+        <!-- Buscar Comunicação com a Terra -->
+        <div class="passo" id="passo-3">
+            <p>Você tenta estabelecer comunicação com a Terra, na esperança de obter ajuda externa para lidar com a situação da aldeia.</p>
+            <button class="btn-proximo" data-proximo="3A">Enviar um Pedido de Socorro</button>
+            <button class="btn-proximo" data-proximo="3B">Procurar um Meio Alternativo de Comunicação</button>
+        </div>
+
+        <!-- Enviar um Pedido de Socorro -->
+        <div class="passo" id="passo-3A">
+            <p>Você envia um pedido de socorro detalhado, esperando uma resposta rápida.</p>
+            <button class="btn-proximo" data-proximo="3A1">Proteger o Local de Comunicação</button>
+            <button class="btn-proximo" data-proximo="3A2">Monitorar Respostas</button>
+        </div>
+
+        <!-- Proteger o Local de Comunicação -->
+        <div class="passo" id="passo-3A1">
+            <p>Você decide proteger o local de comunicação enquanto aguarda uma resposta. É importante garantir que nada interfira na comunicação.</p>
+            <button class="btn-proximo" data-proximo="3A1A">Fortificar a Defesa</button>
+            <button class="btn-proximo" data-proximo="3A1B">Ficar em Alerta</button>
+        </div>
+
+        <!-- Monitorar Respostas -->
+        <div class="passo" id="passo-3A2">
+            <p>Você decide monitorar as respostas que chegam, analisando qualquer mensagem recebida para obter ajuda.</p>
+            <button class="btn-proximo" data-proximo="3A2A">Analisar Mensagens</button>
+            <button class="btn-proximo" data-proximo="3A2B">Enviar Mensagens de Seguimento</button>
+        </div>
+
+        <!-- Botão de Reinício -->
+        <button id="btn-reinicio" style="display: none;">Reiniciar</button>
+    </main>
+    <script src="games.js"></script>
+</body>
+</html>

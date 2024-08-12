@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>A Colônia de Tartarus</title>
+    <title>Plataforma de Jogos</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Plataforma de Jogos</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <h2>Explore Nossos Jogos</h2>
+            <p>Encontre sua próxima aventura aqui!</p>
+        </div>
+    </header>
+    
     <main>
-        <div class="passo ativo" id="passo-0">
-            <img src="dreamcather.jpeg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dignissimos, quibusdam qui sed cum delectus debitis non asperiores dolore illo dolores aperiam adipisci reprehenderit distinctio autem impedit. Aspernatur, blanditiis ad!</p>
-            <button class="btn-proximo" data-proximo="1">Lee Siyeon linda!</button>
-            <button class="btn-proximo" data-proximo="2">Lee Siyeon diva!</button>
-        </div>
-
-        <div class="passo" id="passo-1">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem sunt ipsam repudiandae labore rerum nulla, aut iste cum ab voluptates alias voluptate pariatur, minus fuga eveniet ea facere. Beatae!</p>
-            <button class="btn-proximo" data-proximo="3">SuA linda!</button>
-            <button class="btn-proximo" data-proximo="4">SuA diva!</button>
-        </div>
-
-        <div class="passo" id="passo-2">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore nisi deserunt nam fuga! Ad provident excepturi accusamus aperiam magni eligendi quibusdam quasi cumque? Nobis eveniet commodi sed minima, harum ratione?</p>
-            <button class="btn-proximo" data-proximo="5">Minji linda!</button>
-            <button class="btn-proximo" data-proximo="6">Minji diva!</button>
-        </div>
-
+        <section id="featured-games">
+            <h2>Jogos em Destaque</h2>
+            <div class="game-container">
+                <a href="game1.html" class="game-link">
+                    <img src="game1-cover.jpg" alt="Jogo 1: Aventura Espacial" class="game-cover">
+                    <p>Jogo 1: Aventura Espacial</p>
+                </a>
+                <a href="game2.html" class="game-link">
+                    <img src="game2-cover.jpg" alt="Jogo 2: Mistério no Laboratório" class="game-cover">
+                    <p>Jogo 2: Mistério no Laboratório</p>
+                </a>
+                <!-- Adicione mais jogos aqui -->
+            </div>
+        </section>
     </main>
 
-
-
-
-    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Plataforma de Jogos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
