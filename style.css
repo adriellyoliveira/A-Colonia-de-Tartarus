@@ -18,9 +18,8 @@ header {
     padding: 0 20px;
 }
 
-.navbar .logo {
-    font-size: 24px;
-    text-align: center;
+.logo img {
+    height: 200px;
 }
 
 .nav-links {
