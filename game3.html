@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon City: O Enigma Futurista</title>
+    <link rel="stylesheet" href="neoncity.css">
+</head>
+<body>
+    <main>
+        <!-- Escritório do Detetive -->
+        <div class="passo ativo" id="passo-0">
+            <img src="escritorio.jpg" alt="Escritório do Detetive em Neon City">
+            <p>Você está em seu escritório, olhando para o horizonte brilhante de Neon City. De repente, uma mensagem urgente aparece na tela de seu computador: "Eventos misteriosos estão acontecendo na cidade. Precisamos de sua ajuda!"</p>
+            <button class="btn-proximo" data-proximo="1">Aceitar o Caso</button>
+            <button class="btn-proximo" data-proximo="2">Ignorar a Mensagem</button>
+        </div>
+
+        <!-- Aceitar o Caso -->
+        <div class="passo" id="passo-1">
+            <p>Você aceita o caso e sai do escritório, dirigindo-se para a primeira cena do crime. As ruas de Neon City estão calmas, mas você sente que algo está fora do normal.</p>
+            <button class="btn-proximo" data-proximo="1A">Ir para a Cena do Crime</button>
+            <button class="btn-proximo" data-proximo="1B">Visitar um Informante</button>
+        </div>
+
+        <!-- Ignorar a Mensagem -->
+        <div class="passo" id="passo-2">
+            <p>Você decide ignorar a mensagem e continuar seu dia. Porém, mais tarde, você recebe notícias de que a cidade está em caos e ninguém mais pode ajudar.</p>
+            <button class="btn-proximo" data-proximo="2A">Reconsiderar e Investigar</button>
+            <button class="btn-proximo" data-proximo="2B">Deixar Neon City para Trás</button>
+        </div>
+
+        <!-- Ir para a Cena do Crime -->
+        <div class="passo" id="passo-1A">
+            <p>Na cena do crime, você encontra pistas que levam a um laboratório secreto onde experimentos misteriosos estão sendo conduzidos.</p>
+            <button class="btn-proximo" data-proximo="1A1">Investigar o Laboratório</button>
+            <button class="btn-proximo" data-proximo="1A2">Reportar às Autoridades</button>
+        </div>
+
+        <!-- Visitar um Informante -->
+        <div class="passo" id="passo-1B">
+            <p>Você visita um informante de confiança que revela que a corporação mais poderosa da cidade está envolvida nos eventos misteriosos.</p>
+            <button class="btn-proximo" data-proximo="1B1">Infiltrar-se na Corporação</button>
+            <button class="btn-proximo" data-proximo="1B2">Confrontar o CEO da Corporação</button>
+        </div>
+
+        <!-- Reconsiderar e Investigar -->
+        <div class="passo" id="passo-2A">
+            <p>Você decide reconsiderar e investigar os eventos. Neon City precisa de você, e você não pode abandoná-la.</p>
+            <button class="btn-proximo" data-proximo="1A">Ir para a Cena do Crime</button>
+            <button class="btn-proximo" data-proximo="1B">Visitar um Informante</button>
+        </div>
+
+        <!-- Deixar Neon City para Trás -->
+        <div class="passo" id="passo-2B">
+            <p>Você decide deixar Neon City e sua vida de detetive para trás. Talvez seja melhor assim.</p>
+            <button class="btn-proximo" data-proximo="fim">Fim da História</button>
+        </div>
+
+        <!-- Investigar o Laboratório -->
+        <div class="passo" id="passo-1A1">
+            <p>Você se infiltra no laboratório e descobre experimentos ilegais envolvendo inteligência artificial. Uma IA superpoderosa está prestes a ser ativada.</p>
+            <button class="btn-proximo" data-proximo="1A1A">Desativar a IA</button>
+            <button class="btn-proximo" data-proximo="1A1B">Deixar a IA Ativa</button>
+        </div>
+
+        <!-- Reportar às Autoridades -->
+        <div class="passo" id="passo-1A2">
+            <p>Você reporta às autoridades, mas logo percebe que elas estão envolvidas na conspiração. Agora, você é um alvo.</p>
+            <button class="btn-proximo" data-proximo="1A2A">Fugir de Neon City</button>
+            <button class="btn-proximo" data-proximo="1A2B">Lutar Contra a Conspiração</button>
+        </div>
+
+        <!-- Infiltrar-se na Corporação -->
+        <div class="passo" id="passo-1B1">
+            <p>Você se infiltra na corporação e descobre documentos secretos que revelam planos para controlar toda a cidade.</p>
+            <button class="btn-proximo" data-proximo="1B1A">Expor os Planos para a Mídia</button>
+            <button class="btn-proximo" data-proximo="1B1B">Confrontar o CEO da Corporação</button>
+        </div>
+
+        <!-- Confrontar o CEO da Corporação -->
+        <div class="passo" id="passo-1B2">
+            <p>Você confronta o CEO da corporação, que revela que toda a cidade é apenas um experimento social em grande escala.</p>
+            <button class="btn-proximo" data-proximo="1B2A">Derrubar a Corporação</button>
+            <button class="btn-proximo" data-proximo="1B2B">Juntar-se à Corporação</button>
+        </div>
+
+        <!-- Fim da História -->
+        <div class="passo" id="fim">
+            <p>Esta é apenas uma das muitas histórias que podem acontecer em Neon City. Cada escolha que você faz afeta o destino da cidade. Volte e explore outras possibilidades!</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
